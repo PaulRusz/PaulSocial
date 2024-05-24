@@ -1,7 +1,7 @@
 const { TextEncoderStream } = require('node:stream/web');
 const { User, Application } = require('../model')
 
-module.exports = {
+const userController = {
 
     //  Get all the users
     async getUsers(req, res) {

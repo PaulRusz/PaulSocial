@@ -1,5 +1,7 @@
 const { Schema, model } = require('mongoose')
 
+const reactionSchema = require('./Reaction')
+
 // Schema used to create the Thought model
 
 const thoughtSchema = new Schema({
@@ -21,9 +23,8 @@ const thoughtSchema = new Schema({
         type: String,
         required: true,
     },
-    reactions: [
-        reactionSchema
-    ]
+    reactions: 
+        [reactionSchema]
 },
 // Indicates that the virtuals are to be included
 {
