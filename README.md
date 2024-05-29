@@ -14,7 +14,6 @@ Paul Social is a social network web app that utilyzes an API to function. The so
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
-- [Video-Walkthrough] (#videowalkthrough)
 
 ## Installation
 
