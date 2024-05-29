@@ -66,4 +66,4 @@ PaulRuszkay@gmail.com
 
 ## Video-Walkthrough
 
-- [GoogleDrive] (https://drive.google.com/file/d/1S4uOXy22msDcJ87AXQE7SxkeW7BisPfH/view?usp=drive_linkLinks to an external site.)
+- [GoogleDrive] (https://drive.google.com/file/d/1S4uOXy22msDcJ87AXQE7SxkeW7BisPfH/view)
