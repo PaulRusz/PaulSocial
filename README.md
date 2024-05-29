@@ -4,7 +4,7 @@ A Social Network API
 
 ## Description
 
-Paul Social is a social network web app that utilyzes an API to function. The social media app has the ability to allow users to create a username, share Thoughts, and post Reactions.
+Paul Social is a social network web app that utilizes an API to function. The social media app has the ability to allow users to create a username, share Thoughts, and post Reactions.
 
 ## Table of Contents
 
