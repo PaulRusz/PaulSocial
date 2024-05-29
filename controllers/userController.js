@@ -1,5 +1,5 @@
 const { TextEncoderStream } = require('node:stream/web');
-const { User, Application } = require('../model')
+const { User, Application, Thought } = require('../model')
 
 const userController = {
 
@@ -48,10 +48,10 @@ const userController = {
                 return res.status(404).json({ message: 'There is no user with that ID!' })
             }
 
-            await Application.updateMany({ _id: { $in: user.applicatons } })
             res.json({ message: 'This user has been updated!' })
         } catch (err) {
             res.status(500).json(err);
+            console.error(err)
         }
     },
 
@@ -64,10 +64,11 @@ const userController = {
                 return res.status(404).json({ message: 'There is no user with that ID!' })
             }
 
-            await Application.deleteMany({ _id: { $in: user.applications } })
+            await Thought.deleteMany({ _id: { $in: user.thoughts } })
             res.json({ message: 'This user and their apps have been deleted!'})
         } catch (err) {
             res.status(500).json(err);
+            console.error(err)
         }
     },
 

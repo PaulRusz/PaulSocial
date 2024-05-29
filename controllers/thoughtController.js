@@ -48,7 +48,6 @@ const thoughtController = {
             return res.status(404).json({ message: 'There is no Thought with that ID!' })
         }
 
-        await Applicaiton.updateMany({ _id: { $in: thought.applications } })
         res.json({ message: 'This Thought has been updated!' })
         } catch (err) {
         res.status(500).json(err)
@@ -59,13 +58,12 @@ const thoughtController = {
     // Deletes a Thought
     async deleteThought(req, res) {
         try {
-            const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtID })
+            const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId })
 
             if(!thought) {
                 return res.status(404).json({ message: 'There is no Thought with that ID!' })
             }
 
-            await application.deleteMany({ _id: { $in: thought.applications } })
             res.json({ message: 'This Thought and the related apps have been deleted!' })
         } catch (err) {
             res.status(500).json(err)
